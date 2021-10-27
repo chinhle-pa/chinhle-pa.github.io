@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCV claim online - easy and quick make a claim</title>
+    <style>
+        .iframe-container {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+            padding-top: 80%;
+        }
+        .iframe-container::before {
+            display: block;
+            content: "";
+        }
+
+        .iframe-container .responsive-iframe {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1;
+        }
+        @media only screen (orientation: landscape){
+            .iframe-container {
+                padding-top: 56%;
+            }
+        }
+        @media only screen (orientation: portrait){
+            .iframe-container {
+                padding-top: 220%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe class="responsive-iframe" src="https://script.google.com/macros/s/AKfycbxchC0fB38gd915rRvZ2EudBeSfR1n80N__dB3kpI5L4_FAt_xbXvmmd479DcFxLL-e/exec" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
