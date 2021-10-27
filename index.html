@@ -28,14 +28,14 @@
             height: 100%;
             border: 1;
         }
-        @media (aspect-ratio: 16/9){
-            .iframe-container {
-                padding-top: 56%;
-            }
-        }
-        @media only screen (orientation: portrait){
+        @media screen and (orientation:portrait) {
             .iframe-container {
                 padding-top: 220%;
+            }
+        }
+        @media screen and (orientation:landscape) {
+            .iframe-container {
+                padding-top: 56%;
             }
         }
     </style>
