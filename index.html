@@ -78,13 +78,21 @@ iframe {
     <script src="https://chinhle-pa.github.io/iframe-resizer/jquery.fitframe.js"></script>
     <script>
         $(function(){
-                $('.container').fitframe({ fitHeight: true });
-                });
-        $(function(){
             // iFrameResize({log:true}, '#claim-iframe');
-            
-
         })
+        $(document).ready(function() {
+            var calcHeight = function() {
+                $('#claim-iframe').height($(window).height());
+            }
+
+            calcHeight();
+
+            $(window).resize(function() {
+                calcHeight();
+            }).load(function() {
+                calcHeight();
+            });
+        });
     </script>
 </body>
 </html>
