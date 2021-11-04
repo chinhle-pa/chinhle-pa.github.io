@@ -44,7 +44,14 @@
 </head>
 <body>
     <div class="iframe-container">
-        <iframe class="responsive-iframe" src="https://script.google.com/macros/s/AKfycbxgsKx7_2HkHe5tAsM9XZstLogk8_2qsDcr53WcH6tcyiyJYDucQqiHJIA22uhAKQ44/exec" frameborder="0"></iframe>
+        <iframe id="claim-iframe" class="responsive-iframe" src="https://script.google.com/macros/s/AKfycbyIWpKpVyvZhf4SigYahNeDefr5peiBuGevZnNYFN7RTF2X-KaRjzUdyE0jHjtzoqAI/exec" frameborder="0"></iframe>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://chinhle-pa.github.io/iframe-resizer/iframeResizer.min.js"></script>
+    <script>
+        $(function(){
+            iFrameResize({log:true}, '#claim-iframe');
+        })
+    </script>
 </body>
 </html>
