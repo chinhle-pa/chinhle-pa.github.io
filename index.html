@@ -29,17 +29,20 @@
             width: 100%;
             height: 100%;
             border: 1;
+            width: 1px;
+            min-width: 100%;
+            *width: 100%;
         }
-        @media screen and (orientation:portrait) {
+        /* @media screen and (orientation:portrait) {
             .iframe-container {
-                /* padding-top: 220%; */
+                padding-top: 220%;
             }
         }
         @media screen and (orientation:landscape) {
             .iframe-container {
-                /* padding-top: 56%; */
+                padding-top: 56%;
             }
-        }
+        } */
     </style>
 </head>
 <body>
@@ -50,9 +53,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
         $(function(){
-            // iFrameResize({log:true}, '#claim-iframe');
-        })
-        $(document).ready(function() {
             var calcHeight = function() {
                 $('#claim-iframe, .iframe-container').height($(window).height());
             }
