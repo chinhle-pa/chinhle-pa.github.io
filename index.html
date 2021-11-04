@@ -14,7 +14,7 @@
             width: 100%;
             padding: 0;
             overflow: hidden;
-            padding-top: 220%;
+            /* padding-top: 220%; */
         }
         .iframe-container::before {
             display: block;
@@ -32,12 +32,12 @@
         }
         @media screen and (orientation:portrait) {
             .iframe-container {
-                padding-top: 220%;
+                /* padding-top: 220%; */
             }
         }
         @media screen and (orientation:landscape) {
             .iframe-container {
-                padding-top: 56%;
+                /* padding-top: 56%; */
             }
         }
     </style>
@@ -54,7 +54,7 @@
         })
         $(document).ready(function() {
             var calcHeight = function() {
-                $('#claim-iframe').height($(window).height());
+                $('#claim-iframe, .iframe-container').height($(window).height());
             }
 
             calcHeight();
